@@ -46,8 +46,8 @@ namespace Controllers
 
         }
 
-        [HttpGet("{id}")]
-        [Route("getTransakcijaId")]
+        [HttpGet]
+        [Route("getTransakcijaById")]
         public async Task<IActionResult> GetTransakcijaById(int id)
         {
             Console.WriteLine("This is the comming id ");
@@ -59,18 +59,18 @@ namespace Controllers
         }
 
 
-        //  Service Post method
 
-         [HttpPost]
-        public async Task<IActionResult> CreateTransakcija(TransakcijaDto transakcijaDto)
+        [HttpPost]
+        [Route("updateTransakcija")]
+        public async Task<IActionResult> UpdateTransakcija(Transakcija transakcija)
         {
-            var transakcija = _mapper.Map<Transakcija>(transakcijaDto);
+            //var transakcijadto = _mapper.Map<TransakcijaDto>(transakcija);
             await _repo.UpdateData(transakcija);
-            return Ok(transakcijaDto);
+            return Ok(transakcija);
         }
 
-        // Service Delete method
-        [HttpDelete("{id}")]
+        [HttpDelete]
+        [Route("deleteTransakcija")]
         public async Task<IActionResult> DeleteTransakcija(int id)
         {
             var transakcija = await _repo.GetDataById(id);
@@ -80,5 +80,6 @@ namespace Controllers
 
 
         }
+
     }
 }

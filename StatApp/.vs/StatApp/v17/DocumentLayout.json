@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|solutionrelative:controllers\\transakcijacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|c:\\users\\arsic\\downloads\\diplomski-projekat\\diplomski-projekat\\statapp\\views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|solutionrelative:views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|c:\\users\\arsic\\downloads\\diplomski-projekat\\diplomski-projekat\\statapp\\data\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|solutionrelative:data\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|c:\\users\\arsic\\downloads\\diplomski-projekat\\diplomski-projekat\\statapp\\dto\\transakcijadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|solutionrelative:dto\\transakcijadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|c:\\users\\arsic\\downloads\\diplomski-projekat\\diplomski-projekat\\statapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|c:\\users\\arsic\\downloads\\diplomski-projekat\\diplomski-projekat\\statapp\\views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|solutionrelative:views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59460CF7-639E-403B-BBE5-03C45154185D}|StatApp.csproj|c:\\users\\arsic\\downloads\\diplomski-projekat\\diplomski-projekat\\statapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -44,7 +48,7 @@
               "RelativeDocumentMoniker": "Controllers\\TransakcijaController.cs",
               "ToolTip": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\Controllers\\TransakcijaController.cs",
               "RelativeToolTip": "Controllers\\TransakcijaController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAQwCIAAAAIAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAkwEQAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T16:21:22.082Z",
               "IsPinned": true,
@@ -53,6 +57,33 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ServiceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\Data\\ServiceRepository.cs",
+              "RelativeDocumentMoniker": "Data\\ServiceRepository.cs",
+              "ToolTip": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\Data\\ServiceRepository.cs",
+              "RelativeToolTip": "Data\\ServiceRepository.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAArwEMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T14:49:33.312Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransakcijaDto.cs",
+              "DocumentMoniker": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\DTO\\TransakcijaDto.cs",
+              "RelativeDocumentMoniker": "DTO\\TransakcijaDto.cs",
+              "ToolTip": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\DTO\\TransakcijaDto.cs",
+              "RelativeToolTip": "DTO\\TransakcijaDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T16:54:02.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\Views\\Shared\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Index.cshtml",
@@ -64,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -76,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -88,28 +119,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\Data\\ServiceRepository.cs",
-              "RelativeDocumentMoniker": "Data\\ServiceRepository.cs",
-              "ToolTip": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\Data\\ServiceRepository.cs",
-              "RelativeToolTip": "Data\\ServiceRepository.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAtwBoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T14:49:33.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAA8AAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACIAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T13:44:17.601Z"
+              "WhenOpened": "2024-03-11T13:44:17.601Z",
+              "EditorCaption": ""
             }
           ]
         }
