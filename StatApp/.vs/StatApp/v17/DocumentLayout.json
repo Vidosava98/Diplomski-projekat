@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "Controllers\\TransakcijaController.cs",
               "ToolTip": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\Controllers\\TransakcijaController.cs",
               "RelativeToolTip": "Controllers\\TransakcijaController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwCIAAAAIAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwCIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T16:21:22.082Z",
               "IsPinned": true,
@@ -60,8 +60,7 @@
               "RelativeToolTip": "Views\\Shared\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-11T16:13:42.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T16:13:42.62Z"
             },
             {
               "$type": "Document",
@@ -110,8 +109,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T13:44:17.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T13:44:17.601Z"
             }
           ]
         }
