@@ -13,9 +13,8 @@ namespace Controllers
 {
 
 
-    [ApiController]
-    [Route("api/services")]
-    public class TransakcijaController : ControllerBase
+
+    public class TransakcijaController : Controller
     {
         private readonly IRepository<Transakcija> _repo;
         private readonly IMapper _mapper;
@@ -25,9 +24,18 @@ namespace Controllers
             _mapper = mapper;
         }
 
+        [HttpGet]
+        [Route("Index")]
+        public  async Task<IActionResult> Index()
+        {
+            var model =  await _repo.GetData();
 
+            var modelDTO =  _mapper.Map<IEnumerable<TransakcijaDto>>(model);
+            return View(modelDTO);
+        }
 
         [HttpGet]
+        [Route("getTransakcije")]
         public async Task<IActionResult> GetTransakcije()
         {
             Console.WriteLine("This is the get All service method");
@@ -39,6 +47,7 @@ namespace Controllers
         }
 
         [HttpGet("{id}")]
+        [Route("getTransakcijaId")]
         public async Task<IActionResult> GetTransakcijaById(int id)
         {
             Console.WriteLine("This is the comming id ");

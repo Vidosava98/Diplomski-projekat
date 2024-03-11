@@ -191,3 +191,5 @@ C:\Users\arsic\Downloads\Diplomski-projekat\Diplomski-projekat\StatApp\obj\Debug
 C:\Users\arsic\Downloads\Diplomski-projekat\Diplomski-projekat\StatApp\obj\Debug\net8.0\StatApp.pdb
 C:\Users\arsic\Downloads\Diplomski-projekat\Diplomski-projekat\StatApp\obj\Debug\net8.0\StatApp.genruntimeconfig.cache
 C:\Users\arsic\Downloads\Diplomski-projekat\Diplomski-projekat\StatApp\obj\Debug\net8.0\ref\StatApp.dll
+C:\Users\arsic\Downloads\Diplomski-projekat\Diplomski-projekat\StatApp\obj\Debug\net8.0\StatApp.RazorAssemblyInfo.cache
+C:\Users\arsic\Downloads\Diplomski-projekat\Diplomski-projekat\StatApp\obj\Debug\net8.0\StatApp.RazorAssemblyInfo.cs

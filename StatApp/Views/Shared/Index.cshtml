@@ -1,0 +1,25 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Početna stranica</title>
+</head>
+<body>
+    <h1>Dobrodošli na početnu stranicu!</h1>
+    <div>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@item.Transakcija_id</li>
+                <li>@item.Ime</li>
+                <li>@item.Prezime</li>
+                <li>@item.Jmbg</li>
+                <li>@item.Proizvod</li>
+                <li>@item.Potrosnja</li>
+                <li>@item.Ime</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

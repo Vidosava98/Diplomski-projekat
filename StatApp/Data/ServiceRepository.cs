@@ -25,7 +25,6 @@ namespace fixit.Data
         {
             _context = context;
         }
-        // Delete Service objects
         public async Task<bool> DeleteData(Transakcija service)
         {
             Console.WriteLine("Delete method invoked");
@@ -37,7 +36,6 @@ namespace fixit.Data
 
         public async Task<List<Transakcija>> GetData()
         {
-            //    Getting database data here
             var model = await _context.Transakcija.ToListAsync();
             return model;
 
