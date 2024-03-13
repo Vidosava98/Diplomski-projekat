@@ -28,7 +28,7 @@ namespace Controllers
         [Route("Index")]
         public  async Task<IActionResult> Index()
         {
-            var model =  await _repo.GetData();
+            var model =  await _repo.GetCurrentData();
 
             var modelDTO =  _mapper.Map<IEnumerable<TransakcijaDto>>(model);
             return View(modelDTO);

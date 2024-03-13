@@ -17,7 +17,7 @@ services:
       - |
         FLINK_PROPERTIES=
         jobmanager.rpc.address: jobmanager
-        state.backend: rocksdb
+        state.backend: filesystem
         state.checkpoints.dir: file:///flink-checkpoints
 
   taskmanager:
@@ -38,7 +38,7 @@ services:
         FLINK_PROPERTIES=
         jobmanager.rpc.address: jobmanager
         taskmanager.numberOfTaskSlots: 8
-        state.backend: rocksdb
+        state.backend: filesystem
         state.checkpoints.dir: file:///flink-checkpoints
 
   # zookeeper:

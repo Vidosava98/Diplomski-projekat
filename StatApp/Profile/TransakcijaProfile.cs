@@ -14,7 +14,8 @@ namespace fixit.Profiles
             .ForMember(dest => dest.Ime, opt => opt.MapFrom(src => src.Ime))
             .ForMember(dest => dest.Prezime, opt => opt.MapFrom(src => src.Prezime))
             .ForMember(dest => dest.Jmbg, opt => opt.MapFrom(src => src.Jmbg))
-            .ForMember(dest => dest.Proizvod, opt => opt.MapFrom(src => src.Proizvod));
+            .ForMember(dest => dest.Proizvod, opt => opt.MapFrom(src => src.Proizvod))
+             .ForMember(dest => dest.Datum, opt => opt.MapFrom(src => src.Datum));
             CreateMap<TransakcijaDto, Transakcija>();
         }
     }

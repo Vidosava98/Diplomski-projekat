@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System;
+using Google.Protobuf.WellKnownTypes;
 
 namespace fixit.Models
 {
@@ -14,5 +15,6 @@ namespace fixit.Models
         public string Prezime { get; set; }
         public string Jmbg { get; set; }
         public string Proizvod { get; set; }
+        public DateTime Datum { get; set; }
     }
 }
