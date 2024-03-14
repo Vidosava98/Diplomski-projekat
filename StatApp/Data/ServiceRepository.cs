@@ -7,6 +7,8 @@ using MySqlX.XDevAPI;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Mysqlx.Crud;
 using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.SignalR;
+using StatApp.Data;
 
 
 namespace fixit.Data
@@ -19,15 +21,18 @@ namespace fixit.Data
         Task<T> InsertData(T service);
         Task<T> UpdateData(T service);
         Task<bool> DeleteData(T service);
+        void Refresh();
 
     }
 
     public class ServiceRepository: IRepository<Transakcija>
     {
         private readonly DataContext _context;
-        public ServiceRepository(DataContext context)
+        private readonly IHubContext<TransakcijaHub> _hubContext;
+        public ServiceRepository(DataContext context, IHubContext<TransakcijaHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
         public async Task<bool> DeleteData(Transakcija service)
         {
@@ -68,6 +73,10 @@ namespace fixit.Data
             var model = await _context.Transakcija.ToListAsync();
             return model;
 
+        }   
+        public async void Refresh()
+        {
+            await _hubContext.Clients.All.SendAsync("OdradiReload", "Server");
         }
         public async Task<Transakcija> GetDataById(int id)
         {

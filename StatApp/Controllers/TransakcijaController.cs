@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 using fixit.Models;
 
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.SignalR;
+using StatApp.Data;
+using MySqlX.XDevAPI;
 
 namespace Controllers
 {
@@ -18,10 +21,12 @@ namespace Controllers
     {
         private readonly IRepository<Transakcija> _repo;
         private readonly IMapper _mapper;
-        public TransakcijaController(IRepository<Transakcija> repo, IMapper mapper)
+        private readonly IHubContext<TransakcijaHub> _hubContext;
+        public TransakcijaController(IRepository<Transakcija> repo, IMapper mapper, IHubContext<TransakcijaHub> hubContext)
         {
             _repo = repo;
             _mapper = mapper;
+            _hubContext = hubContext;
         }
 
         [HttpGet]
@@ -31,7 +36,20 @@ namespace Controllers
             var model =  await _repo.GetCurrentData();
 
             var modelDTO =  _mapper.Map<IEnumerable<TransakcijaDto>>(model);
+            await _hubContext.Clients.All.SendAsync("PrimiPoruku", "Server", "Ova poruka je iz index kontrolera");
             return View(modelDTO);
+        }
+        //Treba da postoji Kafka subscriber koji ce da na odredjenom topiku ceka
+        //poruku od ticdc-a i ukoliko je bude da onda pozove Refresh metodu koja ce da kaze svim clientima
+        //da rade reload stranice, ne radim parcijalni reload tabele
+
+
+        [HttpGet]
+        [Route("Refresh")]
+        public async Task<IActionResult> Refresh()
+        {
+            await _hubContext.Clients.All.SendAsync("OdradiReload", "Server");         
+            return Ok();
         }
 
         [HttpGet]
