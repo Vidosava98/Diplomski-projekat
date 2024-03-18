@@ -20,5 +20,7 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\arsic\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\arsic\.nuget\packages\awssdk.core\3.7.302.19</PkgAWSSDK_Core>
+    <PkgAWSSDK_Kinesis Condition=" '$(PkgAWSSDK_Kinesis)' == '' ">C:\Users\arsic\.nuget\packages\awssdk.kinesis\3.7.301.51</PkgAWSSDK_Kinesis>
   </PropertyGroup>
 </Project>

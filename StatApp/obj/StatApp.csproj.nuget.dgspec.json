@@ -49,9 +49,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AWSSDK.Kinesis": {
+              "target": "Package",
+              "version": "[3.7.301.51, )"
+            },
             "Automapper": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",

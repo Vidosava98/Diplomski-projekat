@@ -9,6 +9,7 @@ using Mysqlx.Crud;
 using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.SignalR;
 using StatApp.Data;
+using Confluent.Kafka;
 
 
 namespace fixit.Data
@@ -22,6 +23,7 @@ namespace fixit.Data
         Task<T> UpdateData(T service);
         Task<bool> DeleteData(T service);
         void Refresh();
+        //void kreirajKafkaPotrosaca();
 
     }
 

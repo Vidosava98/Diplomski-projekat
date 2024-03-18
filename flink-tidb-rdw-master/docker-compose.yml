@@ -110,3 +110,12 @@ services:
     depends_on:
       - "tikv"
     restart: on-failure
+
+  tidbcdc:
+    image: pingcap/ticdc
+    volumes:
+      - ./config/tidb-config/tidb-cdc.toml:/tidb-cdc.toml:ro
+      - ./logs/tidbs:/logs/
+    depends_on:
+      - "pd"
+    restart: on-failure

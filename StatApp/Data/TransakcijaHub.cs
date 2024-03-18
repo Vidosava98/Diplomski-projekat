@@ -7,7 +7,7 @@ namespace StatApp.Data
         {
             // Ova metoda može biti pozvana sa klijentske strane
             // i poslati poruku svim povezanim klijentima
-            await Clients.All.SendAsync("PrimiPoruku", korisnik, poruka);
+          //await Clients.All.SendAsync("PrimiPoruku", korisnik, poruka);
         }
     }
 }

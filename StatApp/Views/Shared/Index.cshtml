@@ -69,14 +69,17 @@
             return console.error();
         });
 
-        // connection.on("PrimiPoruku", (korisnik, poruka) => {
-        //     console.log(`Primljena poruka od ${korisnik}: ${poruka}`);
-        //     //window.location.reload();
-        // }); 
-        connection.on("OdradiReload", (korisnik) => {
-           console.log(`Primljena poruka od ${korisnik}`);
-           window.location.reload();
-        });
+        connection.on("PrimiPoruku", (korisnik, poruka) => {
+            console.log(`Primljena poruka od ${korisnik}: ${poruka}`);
+            window.location.reload();
+        }); 
+        // connection.on("OdradiReload", (korisnik) => {
+        //    console.log(`Primljena poruka od ${korisnik}`);
+        //    window.location.reload();
+        // });
+        setInterval(function () {
+            window.location.reload();
+        }, 5000); 
     </script>
 
 </body>
