@@ -88,8 +88,7 @@
               "ViewState": "AQIAADYAAAAAAAAAAAAAABkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-11T16:13:42.62Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -99,7 +98,7 @@
               "RelativeDocumentMoniker": "Views\\Shared\\_TransakcijaPartial.cshtml",
               "ToolTip": "C:\\Users\\arsic\\Downloads\\Diplomski-projekat\\Diplomski-projekat\\StatApp\\Views\\Shared\\_TransakcijaPartial.cshtml",
               "RelativeToolTip": "Views\\Shared\\_TransakcijaPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-18T17:10:10.302Z",
               "EditorCaption": ""
