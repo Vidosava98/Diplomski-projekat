@@ -54,20 +54,24 @@ namespace Controllers
                 }
             });
         }    
+
         [HttpGet]
         [Route("Index")]
-        public  async Task<IActionResult> Index()
-        {         
+        public async Task<IActionResult> Index()
+        {
             var model = await _repo.GetCurrentData();
-            var modelDTO =  _mapper.Map<IEnumerable<TransakcijaDto>>(model);         
-            return View(modelDTO);
-        
+            var modelDTO = _mapper.Map<IEnumerable<TransakcijaDto>>(model);
+            return View("Index", modelDTO);
         }
-        //Treba da postoji Kafka consumer  koji ce da na odredjenom topiku ceka
-        //poruku od ticdc-a i ukoliko je bude da onda pozove Refresh metodu koja ce da kaze svim clientima
-        //da rade reload stranice, ne radim parcijalni reload tabele
-
-
+        [HttpGet]
+        [Route("Partial")]
+        public async Task<IActionResult> Partial()
+        {
+            var model = await _repo.GetCurrentData();
+            var modelDTO = _mapper.Map<IEnumerable<TransakcijaDto>>(model);
+            return PartialView("_TransakcijaPartial", modelDTO);
+        }
+ 
         [HttpGet]
         [Route("Refresh")]
         public async Task<IActionResult> Refresh()

@@ -1,0 +1,25 @@
+﻿<table class="table">
+    <thead>
+        <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>JMBG</th>
+            <th>Proizvod</th>
+            <th>Potrosnja</th>
+            <th>Datum</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Ime</td>
+                <td>@item.Prezime</td>
+                <td>@item.Jmbg</td>
+                <td>@item.Proizvod</td>
+                <td>@item.Potrosnja</td>
+                <td>@item.Datum</td>
+            </tr>
+        }
+    </tbody>
+</table>
