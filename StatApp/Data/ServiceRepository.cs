@@ -10,6 +10,8 @@ using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.SignalR;
 using StatApp.Data;
 using Confluent.Kafka;
+using Org.BouncyCastle.Asn1.X509;
+using Org.BouncyCastle.Tls.Crypto;
 
 
 namespace fixit.Data
@@ -58,13 +60,27 @@ namespace fixit.Data
             //   ) AS g ON g.Jmbg = t.Jmbg AND g.Proizvod = t.Proizvod AND g.MaxDatum = t.Datum
             //   ORDER BY t.Datum;
 
+            //SELECT t.Transakcija_id, t.Potrosnja, t.Ime, t.Prezime, t.Jmbg, t.Proizvod, t.Datum
+            //    FROM transakcija AS t
+            //     INNER JOIN(
+            //      SELECT Jmbg, Proizvod,
+            //      MAX(datum) AS MaxDatum,
+            //      MAX(potrosnja) AS potrosnja
+            //      FROM transakcija
+            //       GROUP BY Jmbg, Proizvod
+            //       ) AS g ON g.Jmbg = t.Jmbg AND g.Proizvod = t.Proizvod AND g.MaxDatum = t.Datum AND g.potrosnja = t.potrosnja
+            //    ORDER BY t.Datum;
+
             var model = await _context.Transakcija
-                .Where(t => _context.Transakcija
+                .Where(
+                t => _context.Transakcija
                     .Where(inner => inner.Jmbg == t.Jmbg && inner.Proizvod == t.Proizvod)
                     .OrderByDescending(inner => inner.Datum)
                     .Select(inner => inner.Datum)
-                    .FirstOrDefault() == t.Datum)
-                .OrderBy(t => t.Datum)
+                    .FirstOrDefault() == t.Datum
+                    )
+                .OrderByDescending(t => t.Datum)
+                .ThenByDescending(t => t.Potrosnja)
                 .ToListAsync();
 
             return model;

@@ -136,5 +136,22 @@ insert into kupac values (2, 'Janko', 'Jankovic','1303200212345');
 insert into kupac values (3, 'Nemanja', 'Pavic','1234567891234');
 insert into kupac values (4, 'Nebojsa', 'Rakic','0107567891234');
 
-insert into kupovina values (1, 1, 1, 2);
+insert into kupovina values (30, 1, 1, 2);
+------------------------------------------------------------------------------
+SELECT t.Transakcija_id, t.Potrosnja, t.Ime, t.Prezime, t.Jmbg, t.Proizvod, t.Datum
+FROM transakcija AS t
+ INNER JOIN(
+  SELECT Jmbg, Proizvod,
+  MAX(datum) AS MaxDatum,
+  MAX(potrosnja) AS potrosnja
+  FROM transakcija
+   GROUP BY Jmbg, Proizvod
+   ) AS g ON g.Jmbg = t.Jmbg AND g.Proizvod = t.Proizvod AND g.MaxDatum = t.Datum AND g.potrosnja = t.potrosnja
+ORDER BY t.Datum;
 
+
+
+SELECT Jmbg, Proizvod,
+  MAX(datum) AS MaxDatum
+  FROM transakcija
+   GROUP BY Jmbg, Proizvod;
