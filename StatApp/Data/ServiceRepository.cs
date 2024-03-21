@@ -71,18 +71,18 @@ namespace fixit.Data
             //       ) AS g ON g.Jmbg = t.Jmbg AND g.Proizvod = t.Proizvod AND g.MaxDatum = t.Datum AND g.potrosnja = t.potrosnja
             //    ORDER BY t.Datum;
 
+
             var model = await _context.Transakcija
                 .Where(
                 t => _context.Transakcija
                     .Where(inner => inner.Jmbg == t.Jmbg && inner.Proizvod == t.Proizvod)
-                    .OrderByDescending(inner => inner.Datum)
-                    .Select(inner => inner.Datum)
-                    .FirstOrDefault() == t.Datum
+                     .OrderByDescending(inner => inner.Potrosnja)
+                     .Select(inner => inner.Potrosnja)
+                     .FirstOrDefault() == t.Potrosnja       
                     )
                 .OrderByDescending(t => t.Datum)
                 .ThenByDescending(t => t.Potrosnja)
                 .ToListAsync();
-
             return model;
 
         }

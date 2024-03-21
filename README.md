@@ -136,7 +136,26 @@ insert into kupac values (2, 'Janko', 'Jankovic','1303200212345');
 insert into kupac values (3, 'Nemanja', 'Pavic','1234567891234');
 insert into kupac values (4, 'Nebojsa', 'Rakic','0107567891234');
 
-insert into kupovina values (30, 1, 1, 2);
+insert into kupovina values (1, 1, 1, 1);
+insert into kupovina values (2, 2, 1, 1);
+insert into kupovina values (3, 3, 1, 1);
+
+insert into kupovina values (4, 1, 2, 1);
+insert into kupovina values (5, 1, 3, 1);
+
+insert into kupovina values (6, 1, 1, 2);
+insert into kupovina values (7, 1, 1, 3);
+
+
+insert into kupovina values (13, 1, 1, 1);
+
+insert into kupovina values (14, 1, 1, 1);
+
+
+insert into kupovina values (22, 2, 2, 1);
+
+insert into kupovina values (23, 2, 2, 1);
+
 ------------------------------------------------------------------------------
 SELECT t.Transakcija_id, t.Potrosnja, t.Ime, t.Prezime, t.Jmbg, t.Proizvod, t.Datum
 FROM transakcija AS t
